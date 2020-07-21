@@ -1,8 +1,7 @@
 # 2020_dacon_satellite_precipitation
 Dacon AI프렌즈 시즌2 위성관측 활용 강수량 산출 대회 준비를 위한 repository  
-Branch naming rule - 전처리-기법/모델
 
-## Dacon_satellite_baseline.ipynb
+## model_baseline_gpu_tf.ipynb
 - LB 1.59
 - Standard scale on sensor data
 - Land type: [ocean, inland water, coastal, land] = [0, 0.3, 0.7, 1.0]
@@ -12,3 +11,9 @@ Branch naming rule - 전처리-기법/모델
 - GoldBar님 ResNet 모델
 - No learning rate scheduler
 - Early stopping patience=4
+
+
+## 파일 종류
+학습모델이름_학습기(gpu, tpu)_프레임워크(tensorflow, pytorch).ipynb
+EDA.ipynb
+gmi_preci_generator.ipynb

@@ -14,6 +14,12 @@ Dacon AI프렌즈 시즌2 위성관측 활용 강수량 산출 대회 준비를 
 
 
 ## 파일 종류
-학습모델이름_학습기(gpu, tpu)_프레임워크(tensorflow, pytorch).ipynb
-EDA.ipynb
-gmi_preci_generator.ipynb
+- 학습모델이름_학습기(gpu, tpu)_프레임워크(tensorflow, pytorch).ipynb
+    1. model_baseline_gpu_tf.ipynb
+    2. ResNet_rot_transpose_cutmix_tpu_tf.ipynb
+    3. ResNet_tpu_tf.ipynb
+    4. Unet_tpu_pytorch.ipynb
+    5. 
+
+- EDA.ipynb
+- gmi_preci_generator.ipynb

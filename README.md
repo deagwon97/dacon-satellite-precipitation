@@ -1,7 +1,7 @@
 # 2020_dacon_satellite_precipitation
 Dacon AI프렌즈 시즌2 위성관측 활용 강수량 산출 대회 준비를 위한 repository  
 
-## 1. 학습한 모델
+## 1. model
 <학습모델이름_학습기(gpu, tpu)_프레임워크(tensorflow, pytorch).ipynb>
 1. model_baseline_gpu_tf.ipynb
     - LB 1.59

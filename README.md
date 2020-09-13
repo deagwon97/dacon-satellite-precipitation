@@ -1,7 +1,7 @@
 # 2020_dacon_satellite_precipitation
 Dacon AI프렌즈 시즌2 위성관측 활용 강수량 산출 대회 준비를 위한 repository  
 
-## 1. model
+## 1. model summury
 <학습모델이름_학습기(gpu, tpu)_프레임워크(tensorflow, pytorch).ipynb>
 1. model_baseline_gpu_tf.ipynb
     - LB 1.59
@@ -16,20 +16,25 @@ Dacon AI프렌즈 시즌2 위성관측 활용 강수량 산출 대회 준비를 
 2. ResNet_rot_transpose_cutmix_tpu_tf.ipynb
     - LB ??
     - Standard scale on sensor data
-    - Land type: [ocean, inland water, coastal, land] = [0, 0.3, 0.7, 1.0]
-    - GMI 강수량 보정 (가까운 점 2개)
-    - DPR 강수량 보정 (가까운 점 2개)
     - Augmentation
         - 위/아래, transpose, 90도, 180도, 270도 회전 => 8배
         - cut_mix 기법으로 2배
         - 데이터를 총 16배로 증가
         - tf.Dataset을 이용하여 배치학습
     - GoldBar님 ResNet 모델
-    - No learning rate scheduler
-    - Early stopping x
-3. ResNet_tpu_tf.ipynb
+    - 
+    - 
+    
 4. Unet_tpu_pytorch.ipynb
-5. 
+    - LB ??
+    - Standard scale on sensor data
+    - Land type: [ocean, inland water, coastal, land] = [0, 0.3, 0.7, 1.0]
+    - GMI 강수량 보정 (가까운 점 2개)
+    - DPR 강수량 보정 (가까운 점 2개)
+    - 
+    - 
+    - 
+    - 
 
 ## 2. gmi_preci_generator.ipynb
 ## 3. EDA.ipynb
@@ -73,3 +78,19 @@ Dacon AI프렌즈 시즌2 위성관측 활용 강수량 산출 대회 준비를 
     V. 영역별 EDA와 Normalization
         1. Noramlization을 위한 EDA
         2. Normalization
+        
+## 3. ResNet_rot_transpose_cutmix_tpu_tf.ipynb
+    I.    Library import  
+    II.   Data Load  
+    III.  Preprocess  
+    IV.   connect TPU  
+    V.    Make model  
+    VI.   Make data generator
+        1. augmentation - rotation, transpose
+        2. augmentation - cutmix
+        3. get dataset
+        4. cutmix 적용결과 시각화
+    VII.  Socre function
+    VIII. Train
+    IX.   Train Result
+    X.    submission
